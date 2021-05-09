@@ -1,10 +1,6 @@
 const INVALID_INPUT_MESSAGE = `Некорректный ввод!`
 
-const isValidNumber = input => {
-    const value = parseFloat(input)
-
-    return !isNaN(value) && value == input
-}
+const isValidNumber = input => input && !isNaN(+input)
 
 const logNumber = () => {   
     const number = prompt(`Введите десятичное число:`)
